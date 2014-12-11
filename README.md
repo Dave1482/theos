@@ -1,0 +1,9 @@
+theos
+=====
+
+Unified cross-platform iPhone Makefile system
+
+_________________________________________________________________________________________________________
+
+This theos version includes code that stops theos from incremental versioning, as well as 64-bit support.
+_________________________________________________________________________________________________________
