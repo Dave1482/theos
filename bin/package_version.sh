@@ -33,12 +33,12 @@ fi
 versionfile="${THEOS_PROJECT_DIR}/.theos/packages/$package-$version"
 build_number=0
 
-if [[ ! -e "$versionfile" ]]; then
-	build_number=1
-else
+#if [[ ! -e "$versionfile" ]]; then
+#	 build_number=1
+#else
 	build_number=$(build_num_from_file "$versionfile")
-	let build_number++
-fi
+#	 let build_number++
+#fi
 
 echo -n "$build_number" > "$versionfile"
 echo "$build_number"

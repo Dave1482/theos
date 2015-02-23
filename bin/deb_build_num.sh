@@ -24,8 +24,8 @@ if [[ ! -e $INFOFILE ]]; then
 else
 	CURNUM=$(cat $INFOFILE)
 	if [[ $GETONLY -eq 0 ]]; then
-		let CURNUM++
-		echo -n $CURNUM > $INFOFILE
+	#	 let CURNUM++
+	       echo -n $CURNUM > $INFOFILE
 	fi
 	echo $CURNUM
 fi
